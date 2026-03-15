@@ -1,0 +1,158 @@
+html{
+scroll-behavior:smooth;
+}
+
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#0b0b0b;
+color:white;
+text-align:center;
+}
+
+/* HERO VIDEO */
+
+.hero-video{
+position:relative;
+height:100vh;
+overflow:hidden;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+/* VIDEO BACKGROUND */
+
+.background-video{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit:cover;
+z-index:-1;
+}
+
+/* HERO TEXT OVER VIDEO */
+
+.overlay{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+text-align:center;
+padding:45px 70px;
+background:rgba(0,0,0,0.25);
+backdrop-filter:blur(8px);
+border-radius:16px;
+}
+
+/* HEADINGS */
+
+h1{
+font-size:64px;
+letter-spacing:2px;
+margin-bottom:10px;
+font-weight:600;
+}
+
+.overlay p{
+font-size:18px;
+opacity:0.9;
+margin-bottom:28px;
+}
+
+/* BUTTON */
+
+.btn{
+display:inline-block;
+padding:14px 32px;
+background:#c6a75b;
+color:black;
+text-decoration:none;
+font-weight:600;
+border-radius:6px;
+transition:all 0.3s ease;
+}
+
+.btn:hover{
+background:#e0c57c;
+transform:translateY(-2px);
+}
+
+/* SECTIONS */
+
+.section{
+padding:80px 20px;
+}
+
+/* IMAGE GRID */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+max-width:1400px;
+margin:auto;
+padding:20px;
+}
+
+/* IMAGES */
+
+.grid img{
+width:100%;
+height:100%;
+object-fit:cover;
+border-radius:10px;
+cursor:pointer;
+transition:transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.grid img:hover{
+transform:scale(1.04);
+box-shadow:0 20px 40px rgba(0,0,0,0.6);
+}
+
+/* VIDEOS */
+
+.grid video{
+width:100%;
+border-radius:10px;
+}
+
+/* LIGHTBOX */
+
+#lightbox{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.95);
+display:none;
+align-items:center;
+justify-content:center;
+z-index:999;
+}
+
+#lightbox img{
+max-width:90%;
+max-height:90%;
+border-radius:8px;
+}
+
+#close{
+position:absolute;
+top:30px;
+right:40px;
+font-size:40px;
+color:white;
+cursor:pointer;
+}
+
+/* FOOTER */
+
+footer{
+padding:30px;
+background:#000;
+}
