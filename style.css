@@ -156,3 +156,38 @@ footer{
 padding:30px;
 background:#000;
 }
+/* MOBILE FIX */
+
+@media (max-width:768px){
+
+.hero-video{
+height:80vh;
+}
+
+.overlay{
+padding:20px 25px;
+width:90%;
+}
+
+h1{
+font-size:36px;
+}
+
+.overlay p{
+font-size:15px;
+}
+
+.btn{
+padding:10px 22px;
+font-size:14px;
+}
+
+.grid{
+grid-template-columns:1fr;
+}
+
+.section{
+padding:60px 15px;
+}
+
+}
